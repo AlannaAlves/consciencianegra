@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Racismo Algorítmico e Ética na IA</title>
+
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2>TECNOLOGIA + IGUALDADE</h2>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#racismo">Racismo Algorítmico</a></li>
+                <li><a href="#exemplos">Exemplos</a></li>
+                <li><a href="#etica">Ética na IA</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <img src="img/1_DZvVq6ry_LPDR5Sl6rayWQ.webp" 
+         alt="Mulher negra e tecnologia"
+         class="IMAGEM-CAPA">
+        <h1>Racismo Algorítmico</h1>
+
+        <h2>Ética na Inteligência Artificial</h2>
+
+        <p>
+            A tecnologia deve reproduzir preconceitos
+            ou construir um mundo mais justo?
+        </p>
+
+        <button onclick="mostrarMais()">
+            Saiba mais
+        </button>
+
+        <button onclick="mensagemConscientizacao()">
+            Combata o racismo
+        </button>
+
+        <button onclick="voltarInicio()">
+            Voltar ao início
+        </button>
+
+        <p id="resultado"></p>
+    </section>
+
+    <section id="racismo">
+        <h2>O que é racismo algorítmico?</h2>
+
+        <p>
+            É quando sistemas tecnológicos reproduzem
+            ou ampliam preconceitos raciais presentes
+            na sociedade.
+        </p>
+    </section>
+
+    <section id="exemplos">
+        <h2>Como o racismo aparece na tecnologia?</h2>
+        <img src="img/KcEdvip4t06U8OAO2rMRAFn4sxC2_AqZxw_mb6nXdXLFA1KNZLLNzItrmReTN38TOixoLYNVK998fJCOBT1TxLzYahDBap3TlvxTxuBGeSFyzQdhKNbvXzWWBeBZ8FsaOmKScyNKPC94Kp1OUGQx8BstfymeRQ50fEjC3yu0cjQAXptQNKa5xEo1.webp" alt="RECONHECIMENTO FACIAL"
+        class="Imagem-secao">
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Reconhecimento Facial</h3>
+                <p>
+                    Alguns sistemas apresentam diferenças
+                    de precisão na identificação de pessoas
+                    negras.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Algoritmos de Busca</h3>
+                <p>
+                    Resultados podem reforçar estereótipos
+                    raciais e preconceitos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Inteligência Artificial</h3>
+                <p>
+                    A IA pode reproduzir preconceitos
+                    presentes nos dados de treinamento.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="etica">
+        <h2>Ética na Inteligência Artificial</h2>
+        <img src="img/3b6c7f971a7137c865d890ee21356308_67a305181d.webp">
+        
+
+        <p>
+            A ética na IA busca garantir que a tecnologia
+            seja utilizada com igualdade, transparência,
+            diversidade e responsabilidade.
+        </p>
+    </section>
+
+    <section id="solucoes">
+        <h2>Como combater o racismo algorítmico?</h2>
+        <img src="img/racismo-algoritmico.webp" alt="PESSOAS NEGRAS TRABALHANDO COM TECNOLOGIA"
+        class="imagem-secao">
+
+        <p>
+            Incentivar a diversidade nos dados,
+            fiscalizar os algoritmos, promover
+            representatividade e desenvolver tecnologias
+            mais justas e inclusivas.
+        </p>
+    </section>
+
+    <footer>
+        <h3>Tecnologia sem racismo!</h3>
+
+        <p>
+            Consciência Negra, igualdade e respeito
+            também fazem parte do futuro digital.
+        </p>
+    </footer>
+    
+<!-- QUIZ INTERATIVO -->
+
+<section id="quiz" class="quiz">
+
+    <h2>TESTE SEU CONHECIMENTO</h2>
+
+    <p class="quiz-intro">
+        Você sabe identificar o racismo algorítmico?
+        Responda às perguntas e descubra!
+    </p>
+
+    <div class="quiz-container">
+
+        <div id="progresso">
+            Pergunta 1 de 5
+        </div>
+
+        <h3 id="pergunta">
+            Carregando pergunta...
+        </h3>
+
+        <div id="opcoes"></div>
+
+        <p id="feedback"></p>
+
+        <button id="proximo" onclick="proximaPergunta()" disabled>
+            Próxima pergunta
+        </button>
+
+        <div id="resultado-quiz"></div>
+
+        <button id="reiniciar" onclick="reiniciarQuiz()" style="display:none;">
+            Refazer quiz
+        </button>
+
+    </div>
+
+</section>
+
+    
+<section id="referencias" class="referencias">
+
+    <h2>Referências Bibliográficas</h2>
+
+    <p class="intro-referencias">
+        Para desenvolver este trabalho, foram utilizadas
+        pesquisas acadêmicas, livros e documentos oficiais
+        sobre racismo algorítmico e ética na Inteligência Artificial.
+    </p>
+
+    <div class="referencia">
+        <h3>1. Tarcízio Silva – Racismo Algorítmico</h3>
+
+        <p>
+            SILVA, Tarcízio. Racismo algorítmico:
+            inteligência artificial e discriminação
+            nas redes digitais. São Paulo: Edições Sesc, 2022.
+        </p>
+
+        <a href="https://racismo-algoritmico.pubpub.org/pub/introducao/release/1"
+           target="_blank">
+            Acessar material
+        </a>
+    </div>
+
+    <div class="referencia">
+        <h3>2. UNESCO – Ética na Inteligência Artificial</h3>
+
+        <p>
+            UNESCO. Recomendação sobre a Ética da
+            Inteligência Artificial. Paris: UNESCO, 2021.
+            Edição em português publicada em 2022.
+        </p>
+
+        <a href="https://unesdoc.unesco.org/ark:/48223/pf0000381137_por"
+           target="_blank">
+            Acessar documento
+        </a>
+    </div>
+
+    <div class="referencia">
+        <h3>3. Joy Buolamwini e Timnit Gebru – Gender Shades</h3>
+
+        <p>
+            BUOLAMWINI, Joy; GEBRU, Timnit.
+            Gender Shades: Intersectional Accuracy
+            Disparities in Commercial Gender Classification.
+            Proceedings of Machine Learning Research, 2018.
+        </p>
+
+        <a href="https://proceedings.mlr.press/v81/buolamwini18a.html"
+           target="_blank">
+            Acessar pesquisa científica
+        </a>
+    </div>
+
+    <p class="data-acesso">
+        Acesso aos materiais: 12 nov. 2026.
+    </p>
+
+</section>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
